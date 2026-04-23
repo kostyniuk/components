@@ -15,7 +15,7 @@ export default function Page() {
         <div className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
-        <TabCard tabs={TAB_CARD_EXAMPLE_PROPS} />
+        <TabCard tabs={TAB_CARD_EXAMPLE_PROPS} className="w-200" />
       </div>
     </div>
   )

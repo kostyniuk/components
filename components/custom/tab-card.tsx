@@ -5,8 +5,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { cn } from "@/lib/utils"
 
 const tabTriggerClassName =
-  "group-data-horizontal/tabs:after:bottom-0 data-active:z-10 data-active:h-full data-active:translate-y-px data-active:border-foreground data-active:border-b-0 data-active:bg-card dark:data-active:bg-card rounded-none group-data-[variant=default]/tabs-list:data-active:shadow-none"
-const cardClassName = "border border-foreground ring-0 rounded-none bg-card"
+  "group-data-horizontal/tabs:after:bottom-0 data-active:z-10 data-active:h-full data-active:bg-muted dark:data-active:bg-muted rounded-none group-data-[variant=default]/tabs-list:data-active:shadow-none"
+const cardClassName = "rounded-none border-0 ring-0 shadow-none bg-muted"
 
 export type TabCardItem = {
   value: string
@@ -35,7 +35,7 @@ export function TabCard({
 }: TabCardProps) {
   return (
     <Tabs defaultValue={defaultValue} className={cn("w-full gap-0", className)}>
-      <TabsList className={cn("p-0", listClassName)}>
+      <TabsList className={cn("bg-transparent p-0", listClassName)}>
         {tabs.map((tab) => (
           <TabsTrigger
             className={cn(tabTriggerClassName, triggerClassName)}
