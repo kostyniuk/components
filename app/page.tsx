@@ -1,4 +1,5 @@
-import { TabSwitch } from "@/components/custom/tab-switch"
+import { TabCard } from "@/components/custom/tab-card"
+import { TAB_CARD_EXAMPLE_PROPS } from "@/components/custom/tab-card.example"
 import { Button } from "@/components/ui/button"
 
 export default function Page() {
@@ -14,7 +15,7 @@ export default function Page() {
         <div className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
-        <TabSwitch />
+        <TabCard tabs={TAB_CARD_EXAMPLE_PROPS} />
       </div>
     </div>
   )
