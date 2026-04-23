@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { cn } from "@/lib/utils"
 
 const tabTriggerClassName =
-  "group-data-horizontal/tabs:after:bottom-0 data-active:z-10 data-active:h-full data-active:bg-muted dark:data-active:bg-muted rounded-none group-data-[variant=default]/tabs-list:data-active:shadow-none"
+  "group-data-horizontal/tabs:after:bottom-0 data-active:z-10 data-active:h-full data-active:border-transparent data-active:bg-muted dark:data-active:border-transparent dark:data-active:bg-muted rounded-none group-data-[variant=default]/tabs-list:data-active:shadow-none"
 const cardClassName = "rounded-none border-0 ring-0 shadow-none bg-muted"
 
 export type TabCardItem = {
