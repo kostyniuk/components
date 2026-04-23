@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 export default function Page() {
   return (
     <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose px-[100px]">
+      <div className="flex w-full max-w-7xl min-w-0 flex-col gap-6 px-6 text-sm leading-loose md:px-12">
         <div>
           <h1 className="font-medium">Project ready!</h1>
           <p>You may now add components and start building.</p>
@@ -15,7 +15,14 @@ export default function Page() {
         <div className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
-        <TabCard tabs={TAB_CARD_EXAMPLE_PROPS} className="w-200" />
+        <div className="grid gap-6 lg:grid-cols-2">
+          <TabCard tabs={TAB_CARD_EXAMPLE_PROPS} className="w-full" />
+          <TabCard
+            tabs={TAB_CARD_EXAMPLE_PROPS}
+            variant="rounded"
+            className="w-full"
+          />
+        </div>
       </div>
     </div>
   )
